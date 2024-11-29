@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10">
+
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Order From</h2>
+
+        <form action="#" method="POST">
+            <div class="mb-4">
+                <label for="full-name" class="block text-gray-700">Nama Lengkap</label>
+                <input type="text" id="full-name" name="full-name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Masukkan email" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700">Nomor Telepon</label>
+                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Masukkan nomor telepon" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="address" class="block text-gray-700">Alamat</label>
+                <textarea id="address" name="address" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Masukkan alamat" required></textarea>
+            </div>
+
+            <div class="mb-4">
+                <label for="product" class="block text-gray-700">Tempat yang Dipesan</label>
+                <select id="product" name="product" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+                    <option value="">Pilih produk</option>
+                    <option value="tempat1">Lapangan Sepak Bola</option>
+                    <option value="tempat2">Lapangan Bola Basket</option>
+                    <option value="tempat3">Lapnagan Tennis</option>
+                    <option value="tempat4">Lapangan Futsal</option>
+                    <option value="tempat5">Lapangan Bola Voli</option>
+                    <option value="tempat6">Lapangan Golf</option>
+                    <option value="tempat7">Lapnagan Tennis Meja</option>
+                    <option value="tempat8">Lapangan Softball</option>
+                    <option value="tempat10">Lapangan Badminton</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="payment" class="block text-gray-700">Metode Pembayaran</label>
+                <select id="payment" name="payment" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+                    <option value="">Pilih metode pembayaran</option>
+                    <option value="bank_transfer">Transfer Bank</option>
+                    <option value="credit_card">Kartu Kredit</option>
+                    <option value="e_wallet">E-Wallet</option>
+                    <option value="e_wallet">QRIS</option>
+
+                </select>
+            </div>
+
+            <div class="mb-6 flex justify-center">
+                <a href="sukses.html" type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Checkout</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
